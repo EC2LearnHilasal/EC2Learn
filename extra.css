@@ -1,22 +1,27 @@
-body{
+body {
   font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #a3dc8b; /* You can adjust the background color or remove it */
 }
 
-.wrapper{
-  position: fixed;
-  top: 70%;
-  left: 70%;
-  transform: translate(-50%, -50%);
-  background-color: #a3dc8b;
-}
-
-.link_wrapper{
+.wrapper {
   position: relative;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-a{
+.link_wrapper {
+  position: relative;
+  margin-top: -20%; /* Adjust the margin-top to move the content up by approximately 2 inches */
+}
+
+a {
   display: block;
-  width: 250px;
+  width: 100%;
   height: 50px;
   line-height: 50px;
   font-weight: bold;
@@ -27,41 +32,41 @@ a{
   text-transform: uppercase;
   letter-spacing: 1px;
   border: 3px solid #333;
-  transition: all .35s;
+  transition: all 0.35s;
+  margin-bottom: 10px;
 }
 
-.icon{
+.icon {
   width: 50px;
   height: 50px;
   border: 3px solid transparent;
   position: absolute;
   transform: rotate(45deg);
-  right: 0;
+  right: -60px;
   top: 0;
   z-index: -1;
-  transition: all .35s;
+  transition: all 0.35s;
 }
 
-.icon svg{
+.icon svg {
   width: 30px;
   position: absolute;
   top: calc(50% - 15px);
   left: calc(50% - 15px);
   transform: rotate(-45deg);
   fill: #000000;
-  transition: all .35s;
+  transition: all 0.35s;
 }
 
-a:hover{
-  width: 200px;
+a:hover {
+  width: 100%;
   border: 3px solid #545454;
-  background: transparent;
+  background: #b9eda3;
   color: #545454;
 }
 
-a:hover + .icon{
+a:hover + .icon {
   border: 3px solid #545454;
-  right: -25%;
+  right: -60px;
+
 }
-
-
